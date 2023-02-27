@@ -9,3 +9,12 @@
 .navbar .container-fluid .navbar-nav .nav-item .nav-link {
     color: white;
 } */
+body {
+    font-family: Arial, sans-serif;
+}
+
+body div.nav_div {
+    background-color: #2874f0;
+    height: 56px;
+}
+
