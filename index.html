@@ -5,16 +5,26 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/style.css">
+        
+        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <title>HTML Practicle</title>
+        
+        <link rel='icon' type="image/x-icon" href="images/favicon/flipkart.jpg">
+
+        <!-- External CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        
+        <title>
+          Online Shopping Site for Grocery, Electronics, Furniture, Mobiles etc...
+        </title>
+
     </head>
     <body>        
 
       <!-- nav container -->
-        <div class="container-fluid bg-primary nav_div">
+      <div class="container-fluid bg-primary nav_div">
             <div class="row py-2">
               
               <!-- Flipkart icon -->
@@ -102,12 +112,28 @@
                 <div class="col d-flex flex-column">
                   <img src="images/img3.webp" style="width: 4em;">
                   <div class="dropdown">
-                    <button class="btn dropdown-toggle py-0" type="button" id="categoryFashion" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn dropdown-toggle py-0" data-bs-auto-close="outside" type="button" id="categoryFashion" data-bs-toggle="dropdown" aria-expanded="false">
                       Fashion
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="categoryFashion">
-                      <li><a class="dropdown-item" href="#">Men's Top Wear</a></li>
-                      <li><a class="dropdown-item" href="#">Women Ethnic</a></li>
+                      <li class="dropend">
+                        <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Men&#x27;s&nbsp;Top&nbsp;Wear</a>
+                        <!-- sub items for men's top wear -->
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Men&#x27;s&nbsp;T-Shirts</a></li>
+                          <li><a class="dropdown-item" href="#">Men&#x27;s&nbsp;Kurtas</a></li>
+                          <li><a class="dropdown-item" href="#">Men&#x27;s&nbsp;Formal&nbsp;Shirts</a></li>
+                        </ul>                     
+                      </li>
+                      <li class="dropend">
+                        <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Women&nbsp;Ethnic</a>
+                        <!-- sub items for women ethnic -->
+                        <ul class="dropdown-menu" data-bs-toggle="dropdown">
+                          <li><a class="dropdown-item" href="#">Women&nbsp;Sarees</a></li>
+                          <li><a class="dropdown-item" href="#">Women&nbsp;Kurtas&nbsp;&nbsp;Kurtis</a></li>
+                          <li><a class="dropdown-item" href="#">Women&nbsp;Gowns</a></li>
+                        </ul>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -116,12 +142,29 @@
                 <div class="col d-flex flex-column">
                   <img src="images/img4.webp" style="width: 4em;">
                   <div class="dropdown">
-                    <button class="btn dropdown-toggle py-0" type="button" id="categoryElectronics" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn dropdown-toggle py-0" data-bs-auto-close="outside" type="button" id="categoryElectronics" data-bs-toggle="dropdown" aria-expanded="false">
                       Electronics
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="categoryElectronics">
-                      <li><a class="dropdown-item" href="#">Gaming</a></li>
-                      <li><a class="dropdown-item" href="#">Laptop Accessories</a></li>
+                      <li class="dropend">
+                        <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Gaming</a>
+                        <!-- sub items for gaming -->
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Gaming&nbsp;Keyboards</a></li>
+                          <li><a class="dropdown-item" href="#">Gaming&nbsp;Consoles</a></li>
+                          <li><a class="dropdown-item" href="#">Gaming&nbsp;Mouse</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropend">
+                        <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Laptop Accessories</a>
+                        <!-- sub items for laptop accessories -->
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Mouse</a></li>
+                          <li><a class="dropdown-item" href="#">Router</a></li>
+                          <li><a class="dropdown-item" href="#">Laptop&nbsp;Keyboards</a></li>
+                          <li><a class="dropdown-item" href="#">Data&nbsp;Cards</a></li>
+                        </ul>                    
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -130,12 +173,29 @@
                 <div class="col d-flex flex-column">
                   <img src="images/img5.webp" style="width: 4em;">
                   <div class="dropdown">
-                    <button class="btn dropdown-toggle py-0" type="button" id="categoryHome" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn dropdown-toggle py-0" data-bs-auto-close="outside" type="button" id="categoryHome" data-bs-toggle="dropdown" aria-expanded="false">
                       Home
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="categoryHome">
-                      <li><a class="dropdown-item" href="#">Furniture Studio</a></li>
-                      <li><a class="dropdown-item" href="#">Kitchen & Dining</a></li>
+                      <li class="dropend">
+                        <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Living&nbsp;Room&nbsp;Furniture</a>
+                        
+                        <!-- sub items for living room furniture -->
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">TV&nbsp;Units</a></li>
+                          <li><a class="dropdown-item" href="#">Dining&nbsp;Sets</a></li>
+                          <li><a class="dropdown-item" href="#">Sofa&nbsp;Beds</a></li>
+                        </ul>                
+                      </li>
+                      <li class="dropend">
+                        <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Kitchen&nbsp;&&nbsp;Dining</a>
+                        <!-- sub items for kitcchen & dining -->
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">TV&nbsp;Units</a></li>
+                          <li><a class="dropdown-item" href="#">Dining&nbsp;Sets</a></li>
+                          <li><a class="dropdown-item" href="#">Sofa&nbsp;Beds</a></li>
+                        </ul>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -168,12 +228,29 @@
                 <div class="col d-flex flex-column">
                   <img src="images/img9.webp" style="width: 4em;">
                   <div class="dropdown">
-                    <button class="btn dropdown-toggle py-0" type="button" id="categoryBTM" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn dropdown-toggle py-0" data-bs-auto-close="outside" type="button" id="categoryBTM" data-bs-toggle="dropdown" aria-expanded="false">
                       Beauty, Toys & More
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="categoryBTM">
-                      <li><a class="dropdown-item" href="#">Men's Grooming</a></li>
-                      <li><a class="dropdown-item" href="#">Food & drinks</a></li>
+                      <li class="dropend">
+                        <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Men's Grooming</a>
+                        <!-- sub items for men's grooming -->
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Face Washes</a></li>
+                          <li><a class="dropdown-item" href="#">Beard Oils</a></li>
+                          <li><a class="dropdown-item" href="#">Hair Styling</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropend">
+                        <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Food & drinks</a>
+                        <!-- sub items for food & drinks-->
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Beverages</a></li>
+                          <li><a class="dropdown-item" href="#">Nuts & Dry&nbsp;Fruits</a></li>
+                          <li><a class="dropdown-item" href="#">Breakfast Items</a></li>
+                        </ul>
+
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -182,20 +259,12 @@
                 <div class="col d-flex flex-column">
                   <img src="images/img10.webp" style="width: 4em;">
                   <div class="dropdown">
-                    <button class="btn dropdown-toggle py-0" data-bs-auto-close="outside" type="button" id="categoryVehicles" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn dropdown-toggle py-0" type="button" id="categoryVehicles" data-bs-toggle="dropdown" aria-expanded="false">
                       Two Wheelers
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="categoryVehicles">
-                      <li class="dropend">
-                        <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Petrol Vehicles</a>
-
-                        <!-- sub items in drop down -->
-                        <ul class="dropdown-menu" >
-                          <li><a class="dropdown-item" href="#">Item1</a></li>
-                          <li><a class="dropdown-item" href="#">Item2</a></li>
-                          <li><a class="dropdown-item" href="#">Item3</a></li>
-                        </ul>
-
+                      <li>
+                        <a class="dropdown-item" href="#">Petrol Vehicles</a>
                       </li>
                       <li>
                         <a class="dropdown-item" href="#">Electric Vehicles</a>
@@ -449,6 +518,7 @@
                   Shop Now!
                 </a>
               </div>
+              
             </div>
             
             <hr>
