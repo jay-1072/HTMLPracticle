@@ -17,3 +17,23 @@ body div.nav_div {
     background-color: #2874f0;
     height: 56px;
 }
+
+body div.nav_div div.row div form.row input:focus {
+    border: none;
+}
+
+body a{
+    text-decoration: none;
+}
+
+body div.dropdown button {
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 500;
+    height: 21px;
+    
+}
+
+body div.dropdown button:hover {
+    
+}
