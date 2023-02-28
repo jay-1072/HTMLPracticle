@@ -77,8 +77,8 @@
           </div> 
           <!-- nav container ended -->
 
-          <!-- Category container -->
-          <div class="container-fluid shadow-lg" style="height: 7em; box-shadow: #fff;">
+          <!-- Category container start -->
+          <div class="container-fluid shadow" style="height: 7em;">
             <div class="container">            
               <div class="row py-2">
 
@@ -182,15 +182,28 @@
                 <div class="col d-flex flex-column">
                   <img src="images/img10.webp" style="width: 4em;">
                   <div class="dropdown">
-                    <button class="btn dropdown-toggle py-0" type="button" id="categoryVehicles" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn dropdown-toggle py-0" data-bs-auto-close="outside" type="button" id="categoryVehicles" data-bs-toggle="dropdown" aria-expanded="false">
                       Two Wheelers
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="categoryVehicles">
-                      <li><a class="dropdown-item" href="#">Petrol Vehicles</a></li>
-                      <li><a class="dropdown-item" href="#">Electric Vehicles</a></li>
+                      <li class="dropend">
+                        <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Petrol Vehicles</a>
+
+                        <!-- sub items in drop down -->
+                        <ul class="dropdown-menu" >
+                          <li><a class="dropdown-item" href="#">Item1</a></li>
+                          <li><a class="dropdown-item" href="#">Item2</a></li>
+                          <li><a class="dropdown-item" href="#">Item3</a></li>
+                        </ul>
+
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Electric Vehicles</a>
+                      </li>
                     </ul>
                   </div>
                 </div>
+                
 
               </div>
             </div>
@@ -198,84 +211,450 @@
 
           <!-- category container ended -->
 
+          <!-- product carousel 1 start -->
+          <div class="container mt-4 shadow" style="height: 25em;">
 
+            <div class="py-3 ps-3" style="height: 3em;">
+              <div class="d-inline h5">
+                Deals of the Day
+              </div>
+              
+              <div class="d-inline ps-3 pt-1">
+                22:07:36 left
+              </div>
 
+              <div class="float-end">
+                <a role="button" class="btn btn-primary" href="#">
+                  VIEW ALL
+                </a>
+              </div>
+            </div>
+            
+            <hr>
+          
+            <div id="carouselDemo" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="false">
 
+              <div class="carousel-inner">
 
-
-
-
-
-
-
-
-
-
-
-
-          <!-- <div class="container-fluid"> -->
-          <!-- carousel -->
-          <!-- <div id="carouselDemo" class="carousel carousel-dark slide" data-bs-ride="carousel"> -->
-
-            <!-- <div class="carousel-inner"> -->
-
-              <!-- Item1 -->
-              <!-- <div class="carousel-item">
-                  <div class="container-fluid d-flex flex-row justify-content-evenly">
-                      <div class="row">
-                          <div class="col-3 px-1">
-                              <img src="images/c_img1.webp" class="w-75 h-75" alt="image1">
-                          </div>
-                          <div class="col-3 px-1">
-                              <img src="images/c_img2.webp" class="w-75 h-75" alt="image2">
-                          </div>
-                          <div class="col-3 px-1">
-                              <img src="images/c_img3.webp" class="w-75 h-75" alt="image3">
-                          </div>
-                          <div class="col-3 px-1">
-                              <img src="images/c_img4.webp" class="w-75 h-75" alt="image4">
-                          </div>
+                <!-- Item1 -->
+                <div class="carousel-item active">
+                    
+                  <div class="row g-3 mt-4">
+                    <!-- img1 -->
+                    <div class="col d-flex flex-column">
+                      <img src="images/c_img1.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image1">
+                      <div class="text-center">
+                        <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Monitor</a>
                       </div>
+                      <div class="text-center">
+                        <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;8999</a>
+                      </div>
+                      <div class="text-center">
+                        <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Samsung</a>
+                      </div>
+                    </div>
+
+                    <!-- img2 -->
+                    <div class="col d-flex flex-column">
+                        <img src="images/c_img2.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image2">
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Hair Dryer</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;399</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Nova</a>
+                        </div>
+                    </div>
+
+                    <!-- img3 -->
+                    <div class="col d-flex flex-column">
+                        <img src="images/c_img3.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image3">
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Plain Cases & Covers</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Under &#x20B9;200</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">For All Top Models</a>
+                        </div>
+                    </div>
+
+                    <!-- img4 -->
+                    <div class="col d-flex flex-column">
+                        <img src="images/c_img4.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image4">
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Top Mirrorless Camera</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;8999</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Canon, Sony</a>
+                        </div>
+                    </div>
+
+                    <!-- img5 -->
+                    <div class="col d-flex flex-column">
+                        <img src="images/c_img5.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image5">
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Printer</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;3999</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">HP</a>
+                        </div>
+                    </div>
+
+                    <!-- img6 -->
+                    <div class="col d-flex flex-column">
+                      <img src="images/c_img6.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image5">
+                      <div class="text-center">
+                        <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Monitor</a>
+                      </div>
+                      <div class="text-center">
+                        <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;8999</a>
+                      </div>
+                      <div class="text-center">
+                        <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">DELL</a>
+                      </div>
+                    </div>
                   </div>
-              </div> -->
+                  <!-- next control -->
+                  <button type="button" class="carousel-control-next" data-bs-target="#carouselDemo" data-bs-slide="next">
+                    <div class="bg-white py-4 shadow-lg">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </div>
+                  </button>
+                </div>
 
-              <!-- Item2 -->
-              <!-- <div class="carousel-item active">
-                  <div class="container-fluid d-flex flex-row justify-content-evenly">
-                      <div class="row">
-                          <div class="col-3 px-1">
-                              <img src="images/c_img5.webp" style="width: inherit; height: inherit;" alt="image5">
-                          </div>
-                          <div class="col-3 px-1">
-                              <img src="images/c_img6.webp" style="width: inherit; height: inherit;" alt="image6">
-                          </div>
-                          <div class="col-3 px-1">
-                              <img src="images/c_img7.webp" style="width: inherit; height: inherit;"  alt="image7">
-                          </div>
-                          <div class="col-3 px-1">
-                              <img src="images/c_img8.webp" style="width: inherit; height: inherit;"  alt="image8">
-                          </div>
-                      </div> 
+
+                <!-- Item2 -->
+                <div class="carousel-item">
+                    
+                  <div class="row g-3 mt-4">
+                    <!-- img1 -->
+                    <div class="col d-flex flex-column">
+                      <img src="images/c_img7.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image1">
+                      <div class="text-center">
+                        <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Monitor</a>
+                      </div>
+                      <div class="text-center">
+                        <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;8999</a>
+                      </div>
+                      <div class="text-center">
+                        <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Samsung</a>
+                      </div>
+                    </div>
+
+                    <!-- img2 -->
+                    <div class="col d-flex flex-column">
+                        <img src="images/c_img8.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image2">
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Hair Dryer</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;399</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Nova</a>
+                        </div>
+                    </div>
+
+                    <!-- img3 -->
+                    <div class="col d-flex flex-column">
+                        <img src="images/c_img3.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image3">
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Plain Cases & Covers</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Under &#x20B9;200</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">For All Top Models</a>
+                        </div>
+                    </div>
+
+                    <!-- img4 -->
+                    <div class="col d-flex flex-column">
+                        <img src="images/c_img4.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image4">
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Top Mirrorless Camera</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;8999</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Canon, Sony</a>
+                        </div>
+                    </div>
+
+                    <!-- img5 -->
+                    <div class="col d-flex flex-column">
+                        <img src="images/c_img5.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image5">
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Printer</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;3999</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">HP</a>
+                        </div>
+                    </div>
+
+                    <!-- img6 -->
+                    <div class="col d-flex flex-column">
+                      <img src="images/c_img6.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image5">
+                      <div class="text-center">
+                        <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Monitor</a>
+                      </div>
+                      <div class="text-center">
+                        <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;8999</a>
+                      </div>
+                      <div class="text-center">
+                        <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">DELL</a>
+                      </div>
+                    </div>
                   </div>
-              </div> -->
-
-              <!-- prev controls -->
-              <!-- <button type="button" class="carousel-control-prev" data-bs-target="#carouselDemo" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Prev</span>
-              </button> -->
-
-              <!-- next control -->
-              <!-- <button type="button" class="carousel-control-next" data-bs-target="#carouselDemo" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-              </button> -->
-            <!-- </div>
-        </div>
-      </div> -->
+                    <!-- prev controls -->
+                  <button type="button" class="carousel-control-prev" data-bs-target="#carouselDemo" data-bs-slide="prev">
+                    <div class="bg-white py-4 shadow-lg">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Prev</span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- product corousel 1 ended -->
 
 
+          <!-- product carousel 2 start -->
+          <div class="container mt-4 shadow" style="height: 25em;">
 
+            <div class="py-2 ps-3" style="height: 3em;">
+              <div class="d-inline h5">
+                Books And music Instruments
+              </div>
+              
+              <div class="fs-6 fw-light">
+                <a href="#" style="text-decoration: none; color: gray;">
+                  Shop Now!
+                </a>
+              </div>
+            </div>
+            
+            <hr>
+          
+            <div id="carousel2" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="false">
+
+              <div class="carousel-inner">
+
+                <!-- Item1 -->
+                <div class="carousel-item active">
+                    
+                  <div class="row g-3 mt-4">
+                    <!-- img1 -->
+                    <div class="col d-flex flex-column">
+                      <img class="mx-auto" src="images/c_img9.webp" alt="image1">
+                      <div class="text-center">
+                        <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Bat</a>
+                      </div>
+                      <div class="text-center">
+                        <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;4999</a>
+                      </div>
+                      <div class="text-center">
+                        <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Explore Now!</a>
+                      </div>
+                    </div>
+
+                    <!-- img2 -->
+                    <div class="col d-flex flex-column">
+                        <img src="images/c_img10.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image2">
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Electric Cycle</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;5999</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Nuva</a>
+                        </div>
+                    </div>
+
+                    <!-- img3 -->
+                    <div class="col d-flex flex-column">
+                        <img src="images/c_img11.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image3">
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Non-Geared Cycle</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;3999</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Hercules</a>
+                        </div>
+                    </div>
+
+                    <!-- img4 -->
+                    <div class="col d-flex flex-column">
+                        <img src="images/c_img12.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image4">
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Microphones</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;599</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Explore Now!</a>
+                        </div>
+                    </div>
+
+                    <!-- img5 -->
+                    <div class="col d-flex flex-column">
+                        <img src="images/c_img13.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image5">
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Piano</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;3999</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Explore Now!</a>
+                        </div>
+                    </div>
+
+                    <!-- img6 -->
+                    <div class="col d-flex flex-column">
+                      <img src="images/c_img14.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image5">
+                      <div class="text-center">
+                        <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Tyre</a>
+                      </div>
+                      <div class="text-center">
+                        <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;3999</a>
+                      </div>
+                      <div class="text-center">
+                        <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Explore Now!</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- next control -->
+                  <button type="button" class="carousel-control-next" data-bs-target="#carousel2" data-bs-slide="next">
+                    <div class="bg-white py-4 shadow-lg">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </div>
+                  </button>
+                </div>
+
+
+                <!-- Item2 -->
+                <div class="carousel-item">
+                    
+                  <div class="row g-3 mt-4">
+                    <!-- img1 -->
+                    <div class="col d-flex flex-column">
+                      <img src="images/c_img7.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image1">
+                      <div class="text-center">
+                        <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Monitor</a>
+                      </div>
+                      <div class="text-center">
+                        <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;8999</a>
+                      </div>
+                      <div class="text-center">
+                        <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Samsung</a>
+                      </div>
+                    </div>
+
+                    <!-- img2 -->
+                    <div class="col d-flex flex-column">
+                        <img src="images/c_img8.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image2">
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Hair Dryer</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;399</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Nova</a>
+                        </div>
+                    </div>
+
+                    <!-- img3 -->
+                    <div class="col d-flex flex-column">
+                        <img src="images/c_img3.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image3">
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Plain Cases & Covers</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Under &#x20B9;200</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">For All Top Models</a>
+                        </div>
+                    </div>
+
+                    <!-- img4 -->
+                    <div class="col d-flex flex-column">
+                        <img src="images/c_img4.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image4">
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Top Mirrorless Camera</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;8999</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Canon, Sony</a>
+                        </div>
+                    </div>
+
+                    <!-- img5 -->
+                    <div class="col d-flex flex-column">
+                        <img src="images/c_img5.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image5">
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Printer</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;3999</a>
+                        </div>
+                        <div class="text-center">
+                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">HP</a>
+                        </div>
+                    </div>
+
+                    <!-- img6 -->
+                    <div class="col d-flex flex-column">
+                      <img src="images/c_img6.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image5">
+                      <div class="text-center">
+                        <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Monitor</a>
+                      </div>
+                      <div class="text-center">
+                        <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;8999</a>
+                      </div>
+                      <div class="text-center">
+                        <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">DELL</a>
+                      </div>
+                    </div>
+                  </div>
+                    <!-- prev controls -->
+                  <button type="button" class="carousel-control-prev" data-bs-target="#carousel2" data-bs-slide="prev">
+                    <div class="bg-white py-4 shadow-lg">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Prev</span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- product corousel 2 ended -->
 
         <!-- Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
