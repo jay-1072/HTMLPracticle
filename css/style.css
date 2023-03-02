@@ -13,18 +13,19 @@ body {
     font-family: Arial, sans-serif;
     grid-auto-rows: inherit;
     overflow-x: auto;
+    box-sizing: border-box;
 }
 
 body div.nav_div {
     background-color: #2874f0;
     height: 56px;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
-    z-index: 3;
+    z-index: 5;
 }
 
 body div.cat_container {
-    z-index: 2;
+    z-index: 4;
 }
 
 body div.nav_div div.row div form.row input:focus {
@@ -44,7 +45,7 @@ body div.dropdown button {
 
 .btn_on_img img:hover {
     transform: scale(1.2);
-    z-index: 4;
+    z-index: 3;
 }
 
 .btn_1 {
@@ -54,13 +55,12 @@ body div.dropdown button {
     transform: translate(-50%, -50%);
 }
 
-
 .btn_on_img:hover .btn_1 {
     display: block;
     background-color: #2874f0;
     opacity: 0.8;
     border: none;
-    z-index: 4;
+    z-index: 2;
 }
 
 /* @media (max-width: 768px) {
