@@ -12,6 +12,7 @@
 body {
     font-family: Arial, sans-serif;
     grid-auto-rows: inherit;
+    overflow-x: auto;
 }
 
 body div.nav_div {
@@ -23,7 +24,6 @@ body div.nav_div {
 }
 
 body div.cat_container {
-    
     z-index: 2;
 }
 
@@ -42,17 +42,15 @@ body div.dropdown button {
     height: 21px;
 }
 
-
-
-body div#carouselDemo img:hover, div.container-fluid img:hover {
+.btn_on_img img:hover {
     transform: scale(1.2);
-    z-index: 3;
+    z-index: 4;
 }
 
 .btn_1 {
     display: none;
     position:absolute; 
-    top: 35%; left: 40%; 
+    top: 40%; left: 50%; 
     transform: translate(-50%, -50%);
 }
 
@@ -64,3 +62,52 @@ body div#carouselDemo img:hover, div.container-fluid img:hover {
     border: none;
     z-index: 4;
 }
+
+/* @media (max-width: 768px) {
+    .carousel-container .row {
+        overflow: scroll;
+    }
+} */
+/* @media (min-width: 768px) {
+    .carousel-inner .carousel-item {
+        overflow-x: scroll;
+    }
+} */
+
+
+/* @media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+} */
+
+/* medium and up screens */
+/* @media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+} */
+
+
+
