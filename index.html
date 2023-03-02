@@ -1,836 +1,1189 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        
-        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        
-        <link rel='icon' type="image/x-icon" href="images/favicon/flipkart.jpg">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- External CSS -->
-        <link rel="stylesheet" href="css/style.css">
-        
-        <title>
-          Online Shopping Site for Grocery, Electronics, Furniture, Mobiles etc...
-        </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    </head>
-    <body>        
+    <link rel='icon' type="image/x-icon" href="images/favicon/flipkart.jpg">
 
-      <!-- nav container -->
-      <div class="container-fluid bg-primary nav_div">
-            <div class="row py-2">
-              
-              <!-- Flipkart icon -->
-              <div class="col-3 d-flex align-items-start justify-content-end">         
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>
+        HTML-Flipkart
+    </title>
+
+</head>
+
+<body>
+
+    <!-- nav container -->
+    <div class="container-fluid bg-primary nav_div">
+        <div class="row py-2">
+            <!-- Flipkart icon -->
+            <div class="col-3 d-flex align-items-start justify-content-end">
                 <ul class="list-unstyled lh-1">
-                  <li><a href="#"><img src="images/flipkart-plus_8d85f4.png" class="img-fluid" width="75" alt="Flipkart"></a></li>
-                  <li>
-                    <a href="#" style="text-decoration: none; padding-left: 3px; color: #fff; font-size: 11px; font-style: italic; font-weight: 400px;">Explore 
-                      <span style="color: #ffe500; font-weight: 500;">Plus
-                      <sup><img width="10" src="images/plus.png"></sup>
-                    </a>
-                  </li>
+                    <li><a href="#"><img src="images/flipkart-plus_8d85f4.png" class="img-fluid" width="75"
+                                alt="Flipkart"></a></li>
+                    <li>
+                        <a href="#"
+                            style="text-decoration: none; padding-left: 3px; color: #fff; font-size: 11px; font-style: italic; font-weight: 400px;">Explore
+                            <span style="color: #ffe500; font-weight: 500;">Plus
+                                <sup><img width="10" src="images/plus.png"></sup>
+                        </a>
+                    </li>
                 </ul>
-              </div>
-  
-              <!-- Search bar + button -->
-              <div class="col-4 d-flex h-50">
-                <form class="row w-100">
-                  <div class="col-12">                  
-                    <div class="input-group">
-                      <input type="text" class="form-control shadow-none bg-white rounded-left" placeholder="Search for products, brands and more">
-                      <button type="button" class="btn shadow-none bg-white rounded-right">
-                        <i class="fa fa-search" aria-hidden="true" style="color: #2874f0;">
-                        </i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            
-              <div class="col">
-                <div class="row d-flex ">
-                  <!-- Login Button -->
-                  <div class="col-auto my-1">
-                    <a href="#" class="btn bg-white rounded-0 fw-bold" role="button" style="text-decoration: none; color: #2874f0; padding-top: 2px; padding-bottom: 2px; width: 7em;">Login</a>
-                  </div>
-
-                  <!-- More -->
-                  <div class="col-auto">
-                    <div class="dropdown">
-                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="color: #fff;">More</button>
-                        <ul class="dropdown-menu dropend" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item" href="#">Notification preferences</a></li>
-                          <li><a class="dropdown-item" href="#">24*7 Customer Care</a></li>
-                          <li><a class="dropdown-item" href="#">Advertise</a></li>
-                          <li><a class="dropdown-item" href="#">Download App</a></li>
-                        </ul>
-                    </div>
-                  </div>
-
-                  <!-- Cart -->
-                  <div class="col-auto">
-                    <button type="button" class="btn">
-                      <svg class="V3C5bO" width="14" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">                        <path class="_1bS9ic" d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86" fill="#fff"></path></svg></a>
-                      <a href="#" style="text-decoration: none;color: #fff;">Cart</a>
-                    </button>
-                  </div>
-                </div>
-             </div>
             </div>
-          </div> 
-          <!-- nav container ended -->
 
-          <!-- Category container start -->
-          <div class="container-fluid shadow cat_container" style="height: 7em;">
-            <div class="container">            
-              <div class="row py-2">
+            <!-- Search bar + button -->
+            <div class="col-4 d-flex h-50">
+                <form class="row w-100">
+                    <div class="col-12">
+                        <div class="input-group">
+                            <input type="text" class="form-control shadow-none bg-white rounded-left"
+                                placeholder="Search for products, brands and more">
+                            <button type="button" class="btn shadow-none bg-white rounded-right">
+                                <i class="fa fa-search" aria-hidden="true" style="color: #2874f0;">
+                                </i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col">
+                <div class="row d-flex ">
+                    <!-- Login Button -->
+                    <div class="col-auto my-1">
+                        <a href="login.html" class="btn bg-white rounded-0 fw-bold" role="button"
+                            style="text-decoration: none; color: #2874f0; padding-top: 2px; padding-bottom: 2px; width: 7em;">Login</a>
+
+                        <!-- Login Modal -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Launch demo modal
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Login Model ended -->
+
+
+
+
+
+
+
+                    </div>
+
+                    <!-- More -->
+                    <div class="col-auto">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false" style="color: #fff;">More</button>
+                            <ul class="dropdown-menu dropend" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Notification preferences</a></li>
+                                <li><a class="dropdown-item" href="#">24*7 Customer Care</a></li>
+                                <li><a class="dropdown-item" href="#">Advertise</a></li>
+                                <li><a class="dropdown-item" href="#">Download App</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Cart -->
+                    <div class="col-auto">
+                        <button type="button" class="btn">
+                            <svg class="V3C5bO" width="14" height="16" viewBox="0 0 16 16"
+                                xmlns="http://www.w3.org/2000/svg">                        <path class="_1bS9ic"
+                                    d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86"
+                                    fill="#fff"></path></svg></a>
+                            <a href="#" style="text-decoration: none;color: #fff;">Cart</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nav container ended -->
+
+    <!-- Category container start -->
+    <div class="container-fluid shadow cat_container" style="height: 7em;">
+        <div class="container">
+            <div class="row py-2">
 
                 <!-- Grocery -->
                 <div class="col d-flex flex-column">
-                  <img src="images/img1.webp" style="width: 4em;">
-                  <div>
-                    <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px; padding-left: 0.5em;">Grocery</a>
-                  </div>
+                    <img src="images/img1.webp" style="width: 4em;">
+                    <div>
+                        <a href="#"
+                            style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px; padding-left: 0.5em;">Grocery</a>
+                    </div>
                 </div>
 
                 <!-- Mobiles -->
                 <div class="col d-flex flex-column">
-                  <img src="images/img2.webp" style="width: 4em;">
-                  <div>
-                    <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px; padding-left: 0.5em">Mobiles</a>
-                  </div>
+                    <img src="images/img2.webp" style="width: 4em;">
+                    <div>
+                        <a href="#"
+                            style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px; padding-left: 0.5em">Mobiles</a>
+                    </div>
                 </div>
 
                 <!-- Fashion -->
                 <div class="col d-flex flex-column">
-                  <img src="images/img3.webp" style="width: 4em;">
-                  <div class="dropdown">
-                    <button class="btn dropdown-toggle py-0" data-bs-auto-close="outside" type="button" id="categoryFashion" data-bs-toggle="dropdown" aria-expanded="false">
-                      Fashion
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="categoryFashion">
-                      <li class="dropend">
-                        <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Men&#x27;s&nbsp;Top&nbsp;Wear</a>
-                        <!-- sub items for men's top wear -->
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Men&#x27;s&nbsp;T-Shirts</a></li>
-                          <li><a class="dropdown-item" href="#">Men&#x27;s&nbsp;Kurtas</a></li>
-                          <li><a class="dropdown-item" href="#">Men&#x27;s&nbsp;Formal&nbsp;Shirts</a></li>
-                        </ul>                     
-                      </li>
-                      <li class="dropend">
-                        <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Women&nbsp;Ethnic</a>
-                        <!-- sub items for women ethnic -->
-                        <ul class="dropdown-menu" data-bs-toggle="dropdown">
-                          <li><a class="dropdown-item" href="#">Women&nbsp;Sarees</a></li>
-                          <li><a class="dropdown-item" href="#">Women&nbsp;Kurtas&nbsp;&nbsp;Kurtis</a></li>
-                          <li><a class="dropdown-item" href="#">Women&nbsp;Gowns</a></li>
+                    <img src="images/img3.webp" style="width: 4em;">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle py-0 px-1" data-bs-auto-close="outside" type="button"
+                            id="categoryFashion" data-bs-toggle="dropdown" aria-expanded="false">
+                            Fashion
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="categoryFashion">
+                            <li class="dropend">
+                                <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                    href="#">Men&#x27;s&nbsp;Top&nbsp;Wear</a>
+                                <!-- sub items for men's top wear -->
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Men&#x27;s&nbsp;T-Shirts</a></li>
+                                    <li><a class="dropdown-item" href="#">Men&#x27;s&nbsp;Kurtas</a></li>
+                                    <li><a class="dropdown-item" href="#">Men&#x27;s&nbsp;Formal&nbsp;Shirts</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropend">
+                                <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                    href="#">Women&nbsp;Ethnic</a>
+                                <!-- sub items for women ethnic -->
+                                <ul class="dropdown-menu" data-bs-toggle="dropdown">
+                                    <li><a class="dropdown-item" href="#">Women&nbsp;Sarees</a></li>
+                                    <li><a class="dropdown-item" href="#">Women&nbsp;Kurtas&nbsp;&nbsp;Kurtis</a></li>
+                                    <li><a class="dropdown-item" href="#">Women&nbsp;Gowns</a></li>
+                                </ul>
+                            </li>
                         </ul>
-                      </li>
-                    </ul>
-                  </div>
+                    </div>
                 </div>
 
                 <!-- Electronics -->
                 <div class="col d-flex flex-column">
-                  <img src="images/img4.webp" style="width: 4em;">
-                  <div class="dropdown">
-                    <button class="btn dropdown-toggle py-0" data-bs-auto-close="outside" type="button" id="categoryElectronics" data-bs-toggle="dropdown" aria-expanded="false">
-                      Electronics
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="categoryElectronics">
-                      <li class="dropend">
-                        <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Gaming</a>
-                        <!-- sub items for gaming -->
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Gaming&nbsp;Keyboards</a></li>
-                          <li><a class="dropdown-item" href="#">Gaming&nbsp;Consoles</a></li>
-                          <li><a class="dropdown-item" href="#">Gaming&nbsp;Mouse</a></li>
+                    <img src="images/img4.webp" style="width: 4em;">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle py-0 px-1" data-bs-auto-close="outside" type="button"
+                            id="categoryElectronics" data-bs-toggle="dropdown" aria-expanded="false">
+                            Electronics
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="categoryElectronics">
+                            <li class="dropend">
+                                <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Gaming</a>
+                                <!-- sub items for gaming -->
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Gaming&nbsp;Keyboards</a></li>
+                                    <li><a class="dropdown-item" href="#">Gaming&nbsp;Consoles</a></li>
+                                    <li><a class="dropdown-item" href="#">Gaming&nbsp;Mouse</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropend">
+                                <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Laptop
+                                    Accessories</a>
+                                <!-- sub items for laptop accessories -->
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Mouse</a></li>
+                                    <li><a class="dropdown-item" href="#">Router</a></li>
+                                    <li><a class="dropdown-item" href="#">Laptop&nbsp;Keyboards</a></li>
+                                    <li><a class="dropdown-item" href="#">Data&nbsp;Cards</a></li>
+                                </ul>
+                            </li>
                         </ul>
-                      </li>
-                      <li class="dropend">
-                        <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Laptop Accessories</a>
-                        <!-- sub items for laptop accessories -->
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Mouse</a></li>
-                          <li><a class="dropdown-item" href="#">Router</a></li>
-                          <li><a class="dropdown-item" href="#">Laptop&nbsp;Keyboards</a></li>
-                          <li><a class="dropdown-item" href="#">Data&nbsp;Cards</a></li>
-                        </ul>                    
-                      </li>
-                    </ul>
-                  </div>
+                    </div>
                 </div>
 
                 <!-- Home -->
                 <div class="col d-flex flex-column">
-                  <img src="images/img5.webp" style="width: 4em;">
-                  <div class="dropdown">
-                    <button class="btn dropdown-toggle py-0" data-bs-auto-close="outside" type="button" id="categoryHome" data-bs-toggle="dropdown" aria-expanded="false">
-                      Home
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="categoryHome">
-                      <li class="dropend">
-                        <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Living&nbsp;Room&nbsp;Furniture</a>
-                        
-                        <!-- sub items for living room furniture -->
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">TV&nbsp;Units</a></li>
-                          <li><a class="dropdown-item" href="#">Dining&nbsp;Sets</a></li>
-                          <li><a class="dropdown-item" href="#">Sofa&nbsp;Beds</a></li>
-                        </ul>                
-                      </li>
-                      <li class="dropend">
-                        <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Kitchen&nbsp;&&nbsp;Dining</a>
-                        <!-- sub items for kitcchen & dining -->
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">TV&nbsp;Units</a></li>
-                          <li><a class="dropdown-item" href="#">Dining&nbsp;Sets</a></li>
-                          <li><a class="dropdown-item" href="#">Sofa&nbsp;Beds</a></li>
+                    <img src="images/img5.webp" style="width: 4em;">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle py-0" data-bs-auto-close="outside" type="button"
+                            id="categoryHome" data-bs-toggle="dropdown" aria-expanded="false">
+                            Home
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="categoryHome">
+                            <li class="dropend">
+                                <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                    href="#">Living&nbsp;Room&nbsp;Furniture</a>
+
+                                <!-- sub items for living room furniture -->
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">TV&nbsp;Units</a></li>
+                                    <li><a class="dropdown-item" href="#">Dining&nbsp;Sets</a></li>
+                                    <li><a class="dropdown-item" href="#">Sofa&nbsp;Beds</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropend">
+                                <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                    href="#">Kitchen&nbsp;&&nbsp;Dining</a>
+                                <!-- sub items for kitcchen & dining -->
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">TV&nbsp;Units</a></li>
+                                    <li><a class="dropdown-item" href="#">Dining&nbsp;Sets</a></li>
+                                    <li><a class="dropdown-item" href="#">Sofa&nbsp;Beds</a></li>
+                                </ul>
+                            </li>
                         </ul>
-                      </li>
-                    </ul>
-                  </div>
+                    </div>
                 </div>
 
                 <!-- Appliances -->
                 <div class="col d-flex flex-column">
-                  <img src="images/img6.webp" style="width: 4em;">
-                  <div>
-                    <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Appliances</a>
-                  </div>
+                    <img src="images/img6.webp" style="width: 4em;">
+                    <div>
+                        <a href="#"
+                            style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Appliances</a>
+                    </div>
                 </div>
 
                 <!-- Travel -->
                 <div class="col d-flex flex-column">
-                  <img src="images/img7.webp" style="width: 4em;">
-                  <div>
-                    <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px; padding-left: 1em;">Travel</a>
-                  </div>
+                    <img src="images/img7.webp" style="width: 4em;">
+                    <div>
+                        <a href="#"
+                            style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px; padding-left: 1em;">Travel</a>
+                    </div>
                 </div>
 
                 <!-- Top Offers -->
                 <div class="col d-flex flex-column">
-                  <img src="images/img8.webp" style="width: 4em;">
-                  <div>
-                    <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Top&nbsp;Offers</a>
-                  </div>
+                    <img src="images/img8.webp" style="width: 4em;">
+                    <div>
+                        <a href="#"
+                            style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Top&nbsp;Offers</a>
+                    </div>
                 </div>
 
                 <!-- Beauty, Toys & More -->
                 <div class="col d-flex flex-column">
-                  <img src="images/img9.webp" style="width: 4em;">
-                  <div class="dropdown">
-                    <button class="btn dropdown-toggle py-0" data-bs-auto-close="outside" type="button" id="categoryBTM" data-bs-toggle="dropdown" aria-expanded="false">
-                      Beauty, Toys & More
-                    </button>
-                    <ul class="dropdown-menu" style="z-index: 3;" aria-labelledby="categoryBTM">
-                      <li class="dropend">
-                        <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Men's Grooming</a>
-                        <!-- sub items for men's grooming -->
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Face Washes</a></li>
-                          <li><a class="dropdown-item" href="#">Beard Oils</a></li>
-                          <li><a class="dropdown-item" href="#">Hair Styling</a></li>
-                        </ul>
-                      </li>
-                      <li class="dropend">
-                        <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Food & drinks</a>
-                        <!-- sub items for food & drinks-->
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Beverages</a></li>
-                          <li><a class="dropdown-item" href="#">Nuts & Dry&nbsp;Fruits</a></li>
-                          <li><a class="dropdown-item" href="#">Breakfast Items</a></li>
-                        </ul>
+                    <img src="images/img9.webp" style="width: 4em;">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle py-0" data-bs-auto-close="outside" type="button"
+                            id="categoryBTM" data-bs-toggle="dropdown" aria-expanded="false">
+                            Beauty, Toys & More
+                        </button>
+                        <ul class="dropdown-menu" style="z-index: 3;" aria-labelledby="categoryBTM">
+                            <li class="dropend">
+                                <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Men's
+                                    Grooming</a>
+                                <!-- sub items for men's grooming -->
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Face Washes</a></li>
+                                    <li><a class="dropdown-item" href="#">Beard Oils</a></li>
+                                    <li><a class="dropdown-item" href="#">Hair Styling</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropend">
+                                <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Food &
+                                    drinks</a>
+                                <!-- sub items for food & drinks-->
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Beverages</a></li>
+                                    <li><a class="dropdown-item" href="#">Nuts & Dry&nbsp;Fruits</a></li>
+                                    <li><a class="dropdown-item" href="#">Breakfast Items</a></li>
+                                </ul>
 
-                      </li>
-                    </ul>
-                  </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <!-- Two Wheelers -->
                 <div class="col d-flex flex-column">
-                  <img src="images/img10.webp" style="width: 4em;">
-                  <div class="dropdown">
-                    <button class="btn dropdown-toggle py-0" type="button" id="categoryVehicles" data-bs-toggle="dropdown" aria-expanded="false">
-                      Two Wheelers
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="categoryVehicles">
-                      <li>
-                        <a class="dropdown-item" href="#">Petrol Vehicles</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Electric Vehicles</a>
-                      </li>
-                    </ul>
-                  </div>
+                    <img src="images/img10.webp" style="width: 4em;">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle py-0" type="button" id="categoryVehicles"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Two Wheelers
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="categoryVehicles">
+                            <li>
+                                <a class="dropdown-item" href="#">Petrol Vehicles</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Electric Vehicles</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                
 
-              </div>
-            </div>
-          </div>
 
-          <!-- category container ended -->
-
-          <!-- product carousel 1 start -->
-
-        <div class="d-flex justify-content-center">
-          <div class="container float-start mx-3 my-3 shadow" style="height: 25em;">
-
-            <div class="py-3 ps-3" style="height: 3em;">
-              <div class="d-inline h5">
-                Deals of the Day
-              </div>
-              
-              <div class="d-inline ps-3 pt-1">
-                22:07:36 left
-              </div>
-
-              <div class="float-end">
-      
-                <!-- Button trigger modal -->
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#model1">
-                VIEW ALL
-              </button>
-
-              <!-- Modal -->
-              <div class="modal" id="model1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <!-- modal dialog -->
-                <div class="modal-dialog">
-                  <!-- modal content -->
-                  <div class="modal-content">
-                    <!-- header -->
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">All Product</h5>
-                      <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
-                    </div>
-                    <!-- body -->
-                    <div class="modal-body">
-                      
-                      <div class="row">
-                        <div class="col d-flex flex-column" style="border: 1px solid lightgray;">                          
-                          <img src="images/c_img1.webp" style="width: 5em; height: 5em;" alt="image1">                          
-                          <div class="text-center">
-                            <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Monitor</a>
-                          </div>
-                          <div class="text-center">
-                            <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;8999</a>
-                          </div>
-                          <div class="text-center">
-                            <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Samsung</a>
-                          </div>
-                        </div>
-
-                        <div class="col d-flex flex-column" style="border: 1px solid lightgray;">                           
-                            <div class="justify-content-center">  
-                              <img src="images/c_img2.webp" style="width: 5em; height: 5em;" alt="image2">
-                            </div>  
-                            <div class="text-center">
-                              <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Hair Dryer</a>
-                            </div>
-                            <div class="text-center">
-                              <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;399</a>
-                            </div>
-                            <div class="text-center">
-                              <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Nova</a>
-                            </div>
-                        </div>
-
-                        <div class="col d-flex flex-column" style="border: 1px solid lightgray;">
-                          <img src="images/c_img3.webp" style="width: 5em; height: 5em;" alt="image3">
-                          <div class="text-center">
-                            <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Plain Cases & Covers</a>
-                          </div>
-                          <div class="text-center">
-                            <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Under &#x20B9;200</a>
-                          </div>
-                          <div class="text-center">
-                            <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">For All Top Models</a>
-                          </div>
-                      </div>
-
-                      </div>
-
-                      <div class="row mt-5">
-                       
-                      </div>
-                     
-                    </div>
-                    <!-- footer -->
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-       
-              </div>
-            </div>
-            
-            <hr>
-          
-            <div id="carouselDemo" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="false">
-
-              <div class="carousel-inner">
-
-                <!-- Item1 -->
-                <div class="carousel-item active">
-                    
-                  <div class="row g-3 mt-4">
-                    <!-- img1 -->
-                    <div class="col d-flex flex-column">
-                      <div class="btn_on_img" style="position: relative;">
-                        <img src="images/c_img1.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image1">
-                        <button class="btn btn_1">Buy Now</button>
-                      </div>
-                      <div class="text-center">
-                        <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Monitor</a>
-                      </div>
-                      <div class="text-center">
-                        <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;8999</a>
-                      </div>
-                      <div class="text-center">
-                        <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Samsung</a>
-                      </div>
-                    </div>
-
-                    <!-- img2 -->
-                    <div class="col d-flex flex-column">
-                      <div class="btn_on_img" style="position: relative;">
-                        <img src="images/c_img2.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image2">
-                        <button class="btn btn_1">Buy Now</button>
-                      </div>
-                        <div class="text-center">
-                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Hair Dryer</a>
-                        </div>
-                        <div class="text-center">
-                          <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;399</a>
-                        </div>
-                        <div class="text-center">
-                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Nova</a>
-                        </div>
-                    </div>
-
-                    <!-- img3 -->
-                    <div class="col d-flex flex-column">
-                        <div class="btn_on_img" style="position: relative;">
-                        <img src="images/c_img3.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image3">
-                        <button class="btn btn_1">Buy Now</button>
-                      </div>
-                        <div class="text-center">
-                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Plain Cases & Covers</a>
-                        </div>
-                        <div class="text-center">
-                          <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Under &#x20B9;200</a>
-                        </div>
-                        <div class="text-center">
-                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">For All Top Models</a>
-                        </div>
-                    </div>
-
-                    <!-- img4 -->
-                    <div class="col d-flex flex-column">
-                      <div class="btn_on_img" style="position: relative;">
-                        <img src="images/c_img4.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image4">
-                        <button class="btn btn_1">Buy Now</button>
-                      </div>
-                        <div class="text-center">
-                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Top Mirrorless Camera</a>
-                        </div>
-                        <div class="text-center">
-                          <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;8999</a>
-                        </div>
-                        <div class="text-center">
-                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Canon, Sony</a>
-                        </div>
-                    </div>
-
-                    <!-- img5 -->
-                    <div class="col d-flex flex-column">
-                      <div class="btn_on_img" style="position: relative;">
-                        <img src="images/c_img5.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image5">
-                        <button class="btn btn_1">Buy Now</button>
-                      </div>
-                        <div class="text-center">
-                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Printer</a>
-                        </div>
-                        <div class="text-center">
-                          <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;3999</a>
-                        </div>
-                        <div class="text-center">
-                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">HP</a>
-                        </div>
-                    </div>
-
-                    <!-- img6 -->
-                    <div class="col d-flex flex-column">
-                      <div class="btn_on_img" style="position: relative;">
-                      <img src="images/c_img6.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image5">
-                      <button class="btn btn_1">Buy Now</button>
-                    </div>
-                      <div class="text-center">
-                        <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Monitor</a>
-                      </div>
-                      <div class="text-center">
-                        <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;8999</a>
-                      </div>
-                      <div class="text-center">
-                        <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">DELL</a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- next control -->
-                  <button type="button" class="carousel-control-next justify-content-end" data-bs-target="#carouselDemo" data-bs-slide="next">
-                    <div class="bg-white py-4 shadow-lg">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </div>
-                  </button>    
-                 
-                </div>                
-
-                <!-- Item2 -->
-                <div class="carousel-item">
-                    
-                  <div class="row g-3 mt-4">
-                    <!-- img1 -->
-                    <div class="col d-flex flex-column">
-                      <div class="btn_on_img" style="position: relative;">
-                      <img src="images/c_img7.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image1">
-                      <button class="btn btn_1">Buy Now</button>
-                    </div>
-                      <div class="text-center">
-                        <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Monitor</a>
-                      </div>
-                      <div class="text-center">
-                        <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;8999</a>
-                      </div>
-                      <div class="text-center">
-                        <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Samsung</a>
-                      </div>
-                    </div>
-
-                    <!-- img2 -->
-                    <div class="col d-flex flex-column">
-                      <div class="btn_on_img" style="position: relative;">
-                        <img src="images/c_img8.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image2">
-                        <button class="btn btn_1">Buy Now</button>
-                      </div>
-                        <div class="text-center">
-                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Hair Dryer</a>
-                        </div>
-                        <div class="text-center">
-                          <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;399</a>
-                        </div>
-                        <div class="text-center">
-                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Nova</a>
-                        </div>
-                    </div>
-
-                    <!-- img3 -->
-                    <div class="col d-flex flex-column">
-                      <div class="btn_on_img" style="position: relative;">
-                        <img src="images/c_img3.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image3">
-                        <button class="btn btn_1">Buy Now</button>
-                      </div>
-                        <div class="text-center">
-                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Plain Cases & Covers</a>
-                        </div>
-                        <div class="text-center">
-                          <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Under &#x20B9;200</a>
-                        </div>
-                        <div class="text-center">
-                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">For All Top Models</a>
-                        </div>
-                    </div>
-
-                    <!-- img4 -->
-                    <div class="col d-flex flex-column">
-                      <div class="btn_on_img" style="position: relative;">
-                        <img src="images/c_img4.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image4">
-                        <button class="btn btn_1">Buy Now</button>
-                      </div>
-                        <div class="text-center">
-                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Top Mirrorless Camera</a>
-                        </div>
-                        <div class="text-center">
-                          <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;8999</a>
-                        </div>
-                        <div class="text-center">
-                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Canon, Sony</a>
-                        </div>
-                    </div>
-
-                    <!-- img5 -->
-                    <div class="col d-flex flex-column">
-                      <div class="btn_on_img" style="position: relative;">
-                        <img src="images/c_img5.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image5">
-                        <button class="btn btn_1">Buy Now</button>
-                      </div>
-                        <div class="text-center">
-                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Printer</a>
-                        </div>
-                        <div class="text-center">
-                          <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;3999</a>
-                        </div>
-                        <div class="text-center">
-                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">HP</a>
-                        </div>
-                    </div>
-
-                    <!-- img6 -->
-                    <div class="col d-flex flex-column">
-                      <div class="btn_on_img" style="position: relative;">
-                      <img src="images/c_img6.webp" style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image5">
-                      <button class="btn btn_1">Buy Now</button>
-                    </div>
-                      <div class="text-center">
-                        <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Monitor</a>
-                      </div>
-                      <div class="text-center">
-                        <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;8999</a>
-                      </div>
-                      <div class="text-center">
-                        <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">DELL</a>
-                      </div>
-                    </div>
-                  </div>
-                    <!-- prev controls -->
-                  <button type="button" class="carousel-control-prev justify-content-start" data-bs-target="#carouselDemo" data-bs-slide="prev">
-                    <div class="bg-white py-4 shadow-lg">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Prev</span>
-                    </div>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-             <!-- Poster -->
-             <div class="float-end mt-3 shadow"  style="height: 25em;">
-              <img src="images/poster.png"  style="height: 100%;" alt="furniture-poster">
             </div>
         </div>
-          <!-- product corousel 1 ended -->
+    </div>
 
+    <!-- category container ended -->
 
-          <!-- items div 2 -->
-          <div>
-            <div class="container-fluid shadow" style="height: 25em; width: auto; margin-left: 120px; margin-right: 105px;">
+    <!-- product carousel 1 start -->
 
-              <div class="py-2 ps-3" style="height: 3em;">
+    <div class="d-flex justify-content-center">
+        <div class="container float-start mx-3 my-3 shadow" style="height: 25%; width: 75%;">
+
+            <div class="py-3 ps-3" style="height: 3em;">
                 <div class="d-inline h5">
-                  Books And music Instruments
+                    <b>Deals of the Day</b>
+                </div>
+
+                <div class="d-inline ps-3 pt-1">
+                    22:07:36 left
+                </div>
+
+                <div class="float-end">
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#model1">
+                        VIEW ALL
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal modal-1" id="model1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <!-- modal dialog -->
+                        <div class="modal-dialog">
+                            <!-- modal content -->
+                            <div class="modal-content">
+                                <!-- header -->
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">All Product</h5>
+                                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                                </div>
+                                <!-- body -->
+                                <div class="modal-body">
+
+                                    <div class="row">
+                                        <div class="col d-flex flex-column" style="border: 1px solid lightgray;">
+                                            <div class="text-center">
+                                                <img src="images/c_img1.webp" style="width: 5em; height: 5em;"
+                                                    alt="image1">
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Monitor</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From
+                                                    &#x20B9;8999</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Samsung</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col d-flex flex-column" style="border: 1px solid lightgray;">
+                                            <div class="text-center">
+                                                <img src="images/c_img2.webp" style="width: 5em; height: 5em;"
+                                                    alt="image2">
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Hair
+                                                    Dryer</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From
+                                                    &#x20B9;399</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Nova</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col d-flex flex-column" style="border: 1px solid lightgray;">
+                                            <div class="text-center">
+                                                <img src="images/c_img3.webp" style="width: 5em; height: 5em;"
+                                                    alt="image3">
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Plain
+                                                    Covers</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Under
+                                                    &#x20B9;200</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">For
+                                                    All Top Models</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col d-flex flex-column" style="border: 1px solid lightgray;">
+                                            <div class="text-center">
+                                                <img src="images/c_img4.webp" style="width: 5em; height: 5em;"
+                                                    alt="image1">
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Camera</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From&nbsp;&#x20B9;8999</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Canon</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col d-flex flex-column" style="border: 1px solid lightgray;">
+                                            <div class="text-center">
+                                                <img src="images/c_img5.webp" style="width: 5em; height: 5em;"
+                                                    alt="image2">
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Printer</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From&nbsp;&#x20B9;399</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">HP</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col d-flex flex-column" style="border: 1px solid lightgray;">
+                                            <div class="text-center">
+                                                <img src="images/c_img6.webp" style="width: 5em; height: 5em;"
+                                                    alt="image3">
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Monitor</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From&nbsp;&#x20B9;8999</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">DELL</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="carouselDemo" class="carousel carousel-dark slide" data-bs-ride="carousel"
+                data-bs-interval="false">
+
+                <div class="carousel-inner">
+
+                    <!-- Item1 -->
+                    <div class="carousel-item active">
+
+                        <div class="row g-3 mt-4">
+                            <!-- img1 -->
+                            <div class="col d-flex flex-column">
+                                <div class="btn_on_img" style="position: relative;">
+                                    <img src="images/c_img1.webp"
+                                        style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image1">
+                                    <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Monitor</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From
+                                        &#x20B9;8999</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: gray; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Samsung</a>
+                                </div>
+                            </div>
+
+                            <!-- img2 -->
+                            <div class="col d-flex flex-column">
+                                <div class="btn_on_img" style="position: relative;">
+                                    <img src="images/c_img2.webp"
+                                        style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image2">
+                                    <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Hair
+                                        Dryer</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From
+                                        &#x20B9;399</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: gray; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Nova</a>
+                                </div>
+                            </div>
+
+                            <!-- img3 -->
+                            <div class="col d-flex flex-column">
+                                <div class="btn_on_img" style="position: relative;">
+                                    <img src="images/c_img3.webp"
+                                        style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image3">
+                                    <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Plain
+                                        Cases & Covers</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Under
+                                        &#x20B9;200</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: gray; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">For
+                                        All Top Models</a>
+                                </div>
+                            </div>
+
+                            <!-- img4 -->
+                            <div class="col d-flex flex-column">
+                                <div class="btn_on_img" style="position: relative;">
+                                    <img src="images/c_img4.webp"
+                                        style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image4">
+                                    <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Top
+                                        Mirrorless Camera</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From
+                                        &#x20B9;8999</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: gray; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Canon,
+                                        Sony</a>
+                                </div>
+                            </div>
+
+                            <!-- img5 -->
+                            <div class="col d-flex flex-column">
+                                <div class="btn_on_img" style="position: relative;">
+                                    <img src="images/c_img5.webp"
+                                        style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image5">
+                                    <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Printer</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From
+                                        &#x20B9;3999</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: gray; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">HP</a>
+                                </div>
+                            </div>
+
+                            <!-- img6 -->
+                            <div class="col d-flex flex-column">
+                                <div class="btn_on_img" style="position: relative;">
+                                    <img src="images/c_img6.webp"
+                                        style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image5">
+                                    <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Monitor</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From
+                                        &#x20B9;8999</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: gray; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">DELL</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- next control -->
+                        <button type="button" class="carousel-control-next justify-content-end"
+                            data-bs-target="#carouselDemo" data-bs-slide="next">
+                            <div class="bg-white py-4 shadow-lg">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </div>
+                        </button>
+
+                    </div>
+
+                    <!-- Item2 -->
+                    <div class="carousel-item">
+
+                        <div class="row g-3 mt-4">
+                            <!-- img1 -->
+                            <div class="col d-flex flex-column">
+                                <div class="btn_on_img" style="position: relative;">
+                                    <img src="images/c_img7.webp"
+                                        style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image1">
+                                    <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Monitor</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From
+                                        &#x20B9;8999</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: gray; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Samsung</a>
+                                </div>
+                            </div>
+
+                            <!-- img2 -->
+                            <div class="col d-flex flex-column">
+                                <div class="btn_on_img" style="position: relative;">
+                                    <img src="images/c_img8.webp"
+                                        style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image2">
+                                    <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Hair
+                                        Dryer</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From
+                                        &#x20B9;399</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: gray; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Nova</a>
+                                </div>
+                            </div>
+
+                            <!-- img3 -->
+                            <div class="col d-flex flex-column">
+                                <div class="btn_on_img" style="position: relative;">
+                                    <img src="images/c_img3.webp"
+                                        style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image3">
+                                    <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Plain
+                                        Cases & Covers</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Under
+                                        &#x20B9;200</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: gray; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">For
+                                        All Top Models</a>
+                                </div>
+                            </div>
+
+                            <!-- img4 -->
+                            <div class="col d-flex flex-column">
+                                <div class="btn_on_img" style="position: relative;">
+                                    <img src="images/c_img4.webp"
+                                        style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image4">
+                                    <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Top
+                                        Mirrorless Camera</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From
+                                        &#x20B9;8999</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: gray; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Canon,
+                                        Sony</a>
+                                </div>
+                            </div>
+
+                            <!-- img5 -->
+                            <div class="col d-flex flex-column">
+                                <div class="btn_on_img" style="position: relative;">
+                                    <img src="images/c_img5.webp"
+                                        style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image5">
+                                    <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Printer</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From
+                                        &#x20B9;3999</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: gray; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">HP</a>
+                                </div>
+                            </div>
+
+                            <!-- img6 -->
+                            <div class="col d-flex flex-column">
+                                <div class="btn_on_img" style="position: relative;">
+                                    <img src="images/c_img6.webp"
+                                        style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image5">
+                                    <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Monitor</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From
+                                        &#x20B9;8999</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#"
+                                        style="color: gray; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">DELL</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- prev controls -->
+                        <button type="button" class="carousel-control-prev justify-content-start"
+                            data-bs-target="#carouselDemo" data-bs-slide="prev">
+                            <div class="bg-white py-4 shadow-lg">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Prev</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Poster -->
+        <div class="float-end mt-3 shadow" style="height: 23.5em">
+            <img src="images/poster.png" style="height: 100%;" alt="furniture-poster">
+        </div>
+    </div>
+    <!-- product corousel 1 ended -->
+
+
+    <!-- items div 2 -->
+    <div>
+        <div class="container-fluid shadow" style="height: 25%; width: 87%; margin-left: 120px; margin-right: 105px;">
+
+            <div class="py-2 ps-3" style="height: 3em;">
+                <div class="d-inline h5">
+                    <b>Books And music Instruments</b>
                 </div>
 
                 <div class="mt-2 float-end">
-                   <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#model1">
-                    VIEW ALL
-                  </button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#model2">
+                        VIEW ALL
+                    </button>
 
-                  <!-- Modal -->
-                  <div class="modal" id="model1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <!-- modal dialog -->
-                    <div class="modal-dialog">
-                      <!-- modal content -->
-                      <div class="modal-content">
-                        <!-- header -->
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">All Product</h5>
-                          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
-                        </div>
-                        <!-- body -->
-                        <div class="modal-body">
-                          
-                          <div class="row">
-                            <div class="col">
-                              <img src="images/c_img1.webp" style="max-width: 100%; min-height: 100%;">
-                            </div>
-                            <div class="col">
-                              <img src="images/c_img2.webp" style="max-width: 100%; min-height: 100%;">
-                            </div>
-                            <div class="col">
-                              <img src="images/c_img3.webp" style="max-width: 100%; min-height: 100%;">
-                            </div>
-                          </div>
+                    <!-- Modal -->
+                    <div class="modal modal-2" id="model2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <!-- modal dialog -->
+                        <div class="modal-dialog">
+                            <!-- modal content -->
+                            <div class="modal-content">
+                                <!-- header -->
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">All Product</h5>
+                                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                                </div>
+                                <!-- body -->
+                                <div class="modal-body">
 
-                          <div class="row mt-5">
-                            <div class="col">
-                              <img src="images/c_img4.webp" style="max-width: 100%; min-height: 100%;">
+                                    <div class="row">
+                                        <div class="col d-flex flex-column" style="border: 1px solid lightgray;">
+                                            <div class="text-center">
+                                                <img src="images/c_img9.webp" style="width: 2em; height: 10em;"
+                                                    alt="image1">
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Bat</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From
+                                                    &#x20B9;4999</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: gray; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Explore&nbsp;Now!</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col d-flex flex-column" style="border: 1px solid lightgray;">
+                                            <div class="text-center">
+                                                <img src="images/c_img10.webp" style="width: 8em; height: 10em;"
+                                                    alt="image2">
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Electric&nbsp;Cycle</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From&nbsp;&#x20B9;5999</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: gray; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Nuva</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col d-flex flex-column" style="border: 1px solid lightgray;">
+                                            <div class="text-center">
+                                                <img src="images/c_img11.webp" style="width: 8em; height: 10em;"
+                                                    alt="image3">
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Cycle</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Under&nbsp;&#x20B9;3999</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: gray; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Hercules</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div class="col d-flex flex-column" style="border: 1px solid lightgray;">
+                                            <div class="text-center">
+                                                <img src="images/c_img12.webp" style="width: 5em; height: 5em;"
+                                                    alt="image1">
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Microphones</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From&nbsp;&#x20B9;599</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: gray; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Explore&nbsp;Now!</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col d-flex flex-column" style="border: 1px solid lightgray;">
+                                            <div class="text-center">
+                                                <img src="images/c_img13.webp" style="width: 5em; height: 5em;"
+                                                    alt="image2">
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Piano</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From&nbsp;&#x20B9;3999</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: gray; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Explore&nbsp;Now!</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col d-flex flex-column" style="border: 1px solid lightgray;">
+                                            <div class="text-center">
+                                                <img src="images/c_img14.webp" style="width: 5em; height: 5em;"
+                                                    alt="image3">
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Tyers</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Under&nbsp;&#x20B9;39990</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="#"
+                                                    style="color: gray; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Explore&nbsp;Now!</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!-- footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
                             </div>
-                            <div class="col">
-                              <img src="images/c_img5.webp" style="max-width: 100%; min-height: 100%;">
-                            </div>
-                            <div class="col">
-                              <img src="images/c_img6.webp" style="max-width: 100%; min-height: 100%;">
-                            </div>
-                          </div>
-                        
                         </div>
-                        <!-- footer -->
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        </div>
-                      </div>
                     </div>
-                  </div>
                 </div>
-                
+
                 <div class="fs-6 fw-light">
-                  <a href="#" style="text-decoration: none; color: gray;">
-                    Shop Now!
-                  </a>
+                    <a href="#" style="text-decoration: none; color: gray;">
+                        Shop Now!
+                    </a>
                 </div>
-              </div>
-            
-              <hr>
-                                  
-              <div class="row mt-4">
+            </div>
+
+            <hr>
+
+            <div class="row mt-4">
                 <!-- img1 -->
-                <div class="col-auto d-flex flex-column">              
-                  <div class="card" style="width: 18rem; border: none;">
-                    
-                    <!-- <div style="height: 200px; width: 286px;" class="d-flex justify-content-center"> -->
-                      <div class="btn_on_img d-flex justify-content-center" style="position: relative;">
-                      <img class="mx-auto" src="images/c_img9.webp" style="max-width: 100%; max-height: 100%;" alt="image1">
-                      <button class="btn btn_1">Buy Now</button>
-                    <!-- </div> -->
-                    </div>                 
-              
-                    <div class="card-body">
-                      <div class="text-center">
-                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bat" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Bat</a>
-                      </div>
-                      <div class="text-center">
-                        <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;4999</a>
-                      </div>
-                      <div class="text-center">
-                        <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Explore Now!</a>
-                      </div>
+                <div class="col-auto d-flex flex-column">
+                    <div class="card" style="width: 18rem; border: none;">
+
+                        <!-- <div style="height: 200px; width: 286px;" class="d-flex justify-content-center"> -->
+                        <div class="btn_on_img d-flex justify-content-center" style="position: relative;">
+                            <img class="mx-auto" src="images/c_img9.webp" style="max-width: 100%; max-height: 100%;"
+                                alt="image1">
+                            <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+                            <!-- </div> -->
+                        </div>
+
+                        <div class="card-body">
+                            <div class="text-center">
+                                <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bat"
+                                    style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Bat</a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#"
+                                    style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From
+                                    &#x20B9;4999</a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#"
+                                    style="color: gray; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Explore
+                                    Now!</a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                    
+
                 <!-- img2 -->
                 <div class="col-auto d-flex flex-column">
                     <div class="card" style="width: 18rem; border: none;">
 
-                      <div class="btn_on_img d-flex justify-content-center" style="position: relative; height: 200px; width: 286px;">
-                        <img class="mx-auto" src="images/c_img10.webp" style="max-width: 100%; max-height: 100%;" alt="image2">
-                        <button class="btn btn_1">Buy Now</button>                      
-                      </div>
-                      <div class="card-body">
-                        <div class="text-center">
-                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Electric Cycle" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Electric Cycle</a>
+                        <div class="btn_on_img d-flex justify-content-center"
+                            style="position: relative; height: 200px; width: 286px;">
+                            <img class="mx-auto" src="images/c_img10.webp" style="max-width: 100%; max-height: 100%;"
+                                alt="image2">
+                            <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
                         </div>
-                        <div class="text-center">
-                          <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;5999</a>
+                        <div class="card-body">
+                            <div class="text-center">
+                                <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Electric Cycle"
+                                    style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Electric
+                                    Cycle</a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#"
+                                    style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From
+                                    &#x20B9;5999</a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#"
+                                    style="color: gray; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Nuva</a>
+                            </div>
                         </div>
-                        <div class="text-center">
-                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Nuva</a>
-                        </div>
-                      </div>
                     </div>
                 </div>
 
                 <!-- img3 -->
                 <div class="col-auto d-flex flex-column">
                     <div class="card" style="width: 18rem; border: none;">
-                      <div class="btn_on_img d-flex justify-content-center" style="position: relative; height: 200px; width: 286px;">
-                        <img class="mx-auto" src="images/c_img11.webp" style="max-width: 100%; max-height: 100%;" alt="image3">
-                        <button class="btn btn_1">Buy Now</button>  
-                      </div>
-                      
-                      <div class="card-body">
-                        <div class="text-center">
-                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Non-Geared Cycle" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Non-Geared Cycle</a>
+                        <div class="btn_on_img d-flex justify-content-center"
+                            style="position: relative; height: 200px; width: 286px;">
+                            <img class="mx-auto" src="images/c_img11.webp" style="max-width: 100%; max-height: 100%;"
+                                alt="image3">
+                            <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
                         </div>
-                        <div class="text-center">
-                          <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;3999</a>
+
+                        <div class="card-body">
+                            <div class="text-center">
+                                <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Non-Geared Cycle"
+                                    style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Non-Geared
+                                    Cycle</a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#"
+                                    style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From
+                                    &#x20B9;3999</a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#"
+                                    style="color: gray; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Hercules</a>
+                            </div>
                         </div>
-                        <div class="text-center">
-                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Hercules</a>
-                        </div>
-                      </div>
                     </div>
                 </div>
 
                 <!-- img4 -->
-                <div class="col-auto d-flex flex-column">                 
+                <div class="col-auto d-flex flex-column">
                     <div class="card" style="width: 18rem; border: none;">
 
-                      <div class="btn_on_img d-flex justify-content-center" style="position: relative; height: 200px; width: 286px;">
-                        <img class="mx-auto" src="images/c_img12.webp" style="max-width: 100%; max-height: 100%;" alt="image4">  
-                        <button class="btn btn_1">Buy Now</button>  
-                      </div>
+                        <div class="btn_on_img d-flex justify-content-center"
+                            style="position: relative; height: 200px; width: 286px;">
+                            <img class="mx-auto" src="images/c_img12.webp" style="max-width: 100%; max-height: 100%;"
+                                alt="image4">
+                            <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+                        </div>
 
-                      <div class="card-body">
-                        <div class="text-center">
-                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Microphones" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Microphones</a>
+                        <div class="card-body">
+                            <div class="text-center">
+                                <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Microphones"
+                                    style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Microphones</a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#"
+                                    style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From
+                                    &#x20B9;599</a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#"
+                                    style="color: gray; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Explore
+                                    Now!</a>
+                            </div>
                         </div>
-                        <div class="text-center">
-                          <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;599</a>
-                        </div>
-                        <div class="text-center">
-                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Explore Now!</a>
-                        </div>
-                      </div>
                     </div>
                 </div>
 
                 <!-- img5 -->
-                <div class="col-auto d-flex flex-column">                   
+                <div class="col-auto d-flex flex-column">
                     <div class="card" style="width: 18rem; border: none;">
 
-                      <div class="btn_on_img d-flex justify-content-center" style="position: relative; height: 200px; width: 286px;">
-                        <img class="mx-auto" src="images/c_img13.webp" style="max-width: 100%; max-height: 100%;" alt="image5">   
-                        <button class="btn btn_1">Buy Now</button>  
-                      </div>
-                      
-                      <div class="card-body">
-                        <div class="text-center">
-                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Piano" style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Piano</a>
+                        <div class="btn_on_img d-flex justify-content-center"
+                            style="position: relative; height: 200px; width: 286px;">
+                            <img class="mx-auto" src="images/c_img13.webp" style="max-width: 100%; max-height: 100%;"
+                                alt="image5">
+                            <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
                         </div>
-                        <div class="text-center">
-                          <a href="#" style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From &#x20B9;3999</a>
+
+                        <div class="card-body">
+                            <div class="text-center">
+                                <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Piano"
+                                    style="color: black; width: 4em; font-family: sans-serif; font-weight: bold; font-size: 14px;">Piano</a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#"
+                                    style="color: green; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">From
+                                    &#x20B9;3999</a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#"
+                                    style="color: gray; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Explore
+                                    Now!</a>
+                            </div>
                         </div>
-                        <div class="text-center">
-                          <a href="#" style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Explore Now!</a>
-                        </div>
-                      </div>
                     </div>
                 </div>
-              </div>
-              <!-- row ended -->  
-              </div>
             </div>
-          <!-- items div 2 ended -->
-
-
-          <div class="container-fluid bg-secondary position-relative bottom-0 mt-3">
-            <div class="row justify-content-center p-1">
-                <div class="col-1"><button type="button" class="btn shadow-none"><a href="#">Homepage</a></button></div>
-                <div class="col-1"><button type="button" class="btn shadow-none"><a href="privacy_policy.html">Privacy Policy</a></button></div>
-                <div class="col-1"><button type="button" class="btn shadow-none"><a href="contact.html">Contact us</a></button></div>
-            </div>
-            <hr>
-            <div class="row justify-content-center p-1">
-                <div class="col-2 fw-bold"><i class="fa fa-copyright"></i>2023 Copyright: By Jay Koshti</div>
-            </div>
+            <!-- row ended -->
         </div>
+    </div>
+    <!-- items div 2 ended -->
 
-        <!-- Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    </body>
+
+    <div class="container-fluid bg-secondary position-relative bottom-0 mt-3">
+        <div class="row justify-content-center p-1">
+            <div class="col-1"><button type="button" class="btn shadow-none"><a href="#">Homepage</a></button></div>
+            <div class="col-1"><button type="button" class="btn shadow-none"><a href="privacy_policy.html">Privacy
+                        Policy</a></button></div>
+            <div class="col-1"><button type="button" class="btn shadow-none"><a href="contact.html">Contact
+                        us</a></button></div>
+        </div>
+        <hr>
+        <div class="row justify-content-center p-1">
+            <div class="col-2 fw-bold"><i class="fa fa-copyright"></i>2023 Copyright: By Jay Koshti</div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
