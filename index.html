@@ -15,7 +15,6 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="css/style.css">
-
     <title>
         HTML-Flipkart
     </title>
@@ -25,7 +24,7 @@
 <body>
 
     <!-- nav container -->
-    <div class="container-fluid bg-primary nav_div">
+    <div class="container-fluid bg-primary nav_div" style="height: 6vh;">
         <div class="row py-2">
             <!-- Flipkart icon -->
             <div class="col-3 d-flex align-items-start justify-content-end">
@@ -61,29 +60,34 @@
             <div class="col">
                 <div class="row">
                     <!-- Login Button -->
-                    <div class="col-auto my-1">                        
+                    <div class="col-auto my-1">
 
-                        <button class="btn bg-white rounded-0 fw-bold py-0" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: #2874f0;">Login</button>
+                        <button class="btn bg-white rounded-0 fw-bold py-0" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" style="color: #2874f0;">Login</button>
 
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title fw-bold" id="exampleModalLabel">
-                                  Login Feature
-                                </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                Login feature will come soon...
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                              </div>
+                        <!-- Login Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fw-bold" id="exampleModalLabel"
+                                            style="padding-left: 170px;">
+                                            Login Feature
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Login feature will come soon...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
                         </div>
 
                     </div>
@@ -104,13 +108,40 @@
 
                     <!-- Cart -->
                     <div class="col-auto">
-                        <button type="button" class="btn">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#cartModal">
                             <svg class="V3C5bO" width="14" height="16" viewBox="0 0 16 16"
                                 xmlns="http://www.w3.org/2000/svg">                        <path class="_1bS9ic"
                                     d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86"
                                     fill="#fff"></path></svg></a>
                             <a href="#" style="text-decoration: none;color: #fff;">Cart</a>
-                        </button>
+                        </button>                
+
+                        <!-- cart Modal -->
+                        <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fw-bold" id="cartModalLabel"
+                                            style="padding-left: 170px;">
+                                            Cart Feature
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Cart feature will come soon...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
@@ -119,32 +150,35 @@
     <!-- nav container ended -->
 
     <!-- Category container start -->
-    <div class="container-fluid shadow cat_container" style="height: 7em;">
-        <div class="container">
-            <div class="row py-2">
+    <div class="container-fluid shadow cat_container">
+        <div class="container cat_container_1">
+            <div class="row" style="min-width: 0; min-height: 0;">
 
                 <!-- Grocery -->
-                <div class="col d-flex flex-column">
-                    <img src="images/img1.webp" style="width: 4em;">
-                    <div>
+                <div class="col d-flex flex-column" style="min-width: 0; min-height: 0;">
+                    <div class="text-center"><img src="images/img1.webp" style="width: 4em;"></div>
+
+                    <div class="text-center">
                         <a href="#"
                             style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px; padding-left: 0.5em;">Grocery</a>
                     </div>
                 </div>
 
                 <!-- Mobiles -->
-                <div class="col d-flex flex-column">
-                    <img src="images/img2.webp" style="width: 4em;">
-                    <div>
+                <div class="col d-flex flex-column" style="min-width: 0; min-height: 0;">
+                    <div class="text-center"><img src="images/img2.webp" style="width: 4em;"></div>
+
+                    <div class="text-center">
                         <a href="#"
                             style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px; padding-left: 0.5em">Mobiles</a>
                     </div>
                 </div>
 
                 <!-- Fashion -->
-                <div class="col d-flex flex-column">
-                    <img src="images/img3.webp" style="width: 4em;">
-                    <div class="dropdown">
+                <div class="col d-flex flex-column" style="min-width: 0; min-height: 0;">
+                    <div class="text-center"><img src="images/img3.webp" style="width: 4em;"></div>
+
+                    <div class="dropdown text-center">
                         <button class="btn dropdown-toggle py-0 px-1" data-bs-auto-close="outside" type="button"
                             id="categoryFashion" data-bs-toggle="dropdown" aria-expanded="false">
                             Fashion
@@ -175,9 +209,10 @@
                 </div>
 
                 <!-- Electronics -->
-                <div class="col d-flex flex-column">
-                    <img src="images/img4.webp" style="width: 4em;">
-                    <div class="dropdown">
+                <div class="col d-flex flex-column" style="min-width: 0; min-height: 0;">
+                    <div class="text-center"><img src="images/img4.webp" style="width: 4em;"></div>
+
+                    <div class="dropdown text-center">
                         <button class="btn dropdown-toggle py-0 px-1" data-bs-auto-close="outside" type="button"
                             id="categoryElectronics" data-bs-toggle="dropdown" aria-expanded="false">
                             Electronics
@@ -208,9 +243,12 @@
                 </div>
 
                 <!-- Home -->
-                <div class="col d-flex flex-column">
-                    <img src="images/img5.webp" style="width: 4em;">
-                    <div class="dropdown">
+                <div class="col d-flex flex-column" style="min-width: 0; min-height: 0;">
+                    <div class="text-center">
+                        <img src="images/img5.webp" style="width: 4em;">
+                    </div>
+
+                    <div class="dropdown text-center">
                         <button class="btn dropdown-toggle py-0" data-bs-auto-close="outside" type="button"
                             id="categoryHome" data-bs-toggle="dropdown" aria-expanded="false">
                             Home
@@ -242,36 +280,46 @@
                 </div>
 
                 <!-- Appliances -->
-                <div class="col d-flex flex-column">
-                    <img src="images/img6.webp" style="width: 4em;">
-                    <div>
+                <div class="col d-flex flex-column" style="min-width: 0; min-height: 0;">
+                    <div class="text-center">
+                        <img src="images/img6.webp" style="width: 4em;">
+                    </div>
+
+                    <div class="text-center">
                         <a href="#"
                             style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Appliances</a>
                     </div>
                 </div>
 
                 <!-- Travel -->
-                <div class="col d-flex flex-column">
-                    <img src="images/img7.webp" style="width: 4em;">
-                    <div>
+                <div class="col d-flex flex-column" style="min-width: 0; min-height: 0;">
+                    <div class="text-center">
+                        <img src="images/img7.webp" style="width: 4em;">
+                    </div>
+
+                    <div class="text-center">
                         <a href="#"
                             style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px; padding-left: 1em;">Travel</a>
                     </div>
                 </div>
 
                 <!-- Top Offers -->
-                <div class="col d-flex flex-column">
-                    <img src="images/img8.webp" style="width: 4em;">
-                    <div>
+                <div class="col d-flex flex-column" style="min-width: 0; min-height: 0;">
+                    <div class="text-center"><img src="images/img8.webp" style="width: 4em;"></div>
+
+                    <div class="text-center">
                         <a href="#"
                             style="color: black; width: 4em; font-family: sans-serif; font-weight: 500; font-size: 14px;">Top&nbsp;Offers</a>
                     </div>
                 </div>
 
                 <!-- Beauty, Toys & More -->
-                <div class="col d-flex flex-column">
-                    <img src="images/img9.webp" style="width: 4em;">
-                    <div class="dropdown">
+                <div class="col d-flex flex-column" style="min-width: 0; min-height: 0;">
+                    <div class="text-center">
+                        <img src="images/img9.webp" style="width: 4em;">
+                    </div>
+
+                    <div class="dropdown text-center">
                         <button class="btn dropdown-toggle py-0" data-bs-auto-close="outside" type="button"
                             id="categoryBTM" data-bs-toggle="dropdown" aria-expanded="false">
                             Beauty, Toys & More
@@ -303,9 +351,12 @@
                 </div>
 
                 <!-- Two Wheelers -->
-                <div class="col d-flex flex-column">
-                    <img src="images/img10.webp" style="width: 4em;">
-                    <div class="dropdown">
+                <div class="col d-flex flex-column" style="min-width: 0; min-height: 0;">
+                    <div class="text-center ms-2 ps-5">
+                        <img src="images/img10.webp" style="width: 4em;">
+                    </div>
+
+                    <div class="dropdown text-center ms-2 ps-4">
                         <button class="btn dropdown-toggle py-0" type="button" id="categoryVehicles"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Two Wheelers
@@ -330,8 +381,8 @@
 
     <!-- product carousel 1 start -->
 
-    <div class="d-flex justify-content-center">
-        <div class="container float-start mx-3 my-3 shadow" style="height: 25%; width: 75%;">
+    <div class="d-flex justify-content-center carousel-div-1" style="height: 25%; width: 100%;">
+        <div class="container container-1 float-start mx-3 my-3 shadow" style="height: 25%; width: 100%;">
 
             <div class="py-3 ps-3" style="height: 3em;">
                 <div class="d-inline h5">
@@ -358,7 +409,10 @@
                             <div class="modal-content">
                                 <!-- header -->
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">All Product</h5>
+                                    <h5 class="modal-title fw-bold" id="exampleModalLabel" style="padding-left: 170px;">
+                                        All Product</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
                                     <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
                                 </div>
                                 <!-- body -->
@@ -504,21 +558,47 @@
 
             <hr>
 
-            <div id="carouselDemo" class="carousel carousel-dark slide" data-bs-ride="carousel"
-                data-bs-interval="false">
+            <!-- carousel Modal for product feature -->
+            <div class="modal fade" id="carouselModal" tabindex="-1" aria-labelledby="carouselModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title fw-bold" id="carouselModalLabel" style="padding-left: 170px;">
+                                Product Feature
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Product feature will come soon...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 
-                <div class="carousel-inner">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="carouselDemo" class="carousel carousel-dark slide" data-bs-ride="carousel"
+                data-bs-interval="false" style="height: 25%; width: 100%;">
+
+                <div class="carousel-inner" style="height: 25%; width: 100%;">
 
                     <!-- Item1 -->
-                    <div class="carousel-item active">
+                    <div class="carousel-item active" style="height: 25%; width: 100%;">
 
-                        <div class="row g-3 mt-4">
+                        <div class="row g-3 mt-4" style="height: 25%; width: 100%;">
                             <!-- img1 -->
                             <div class="col d-flex flex-column">
                                 <div class="btn_on_img" style="position: relative;">
                                     <img src="images/c_img1.webp"
                                         style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image1">
-                                    <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+
+
+                                    <button class="btn btn_1" data-bs-toggle="modal" data-bs-target="#carouselModal">Buy
+                                        Now</button>
+
 
                                 </div>
                                 <div class="text-center">
@@ -541,7 +621,8 @@
                                 <div class="btn_on_img" style="position: relative;">
                                     <img src="images/c_img2.webp"
                                         style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image2">
-                                    <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+                                    <button class="btn btn_1" data-bs-toggle="modal" data-bs-target="#carouselModal">Buy
+                                        Now</button>
                                 </div>
                                 <div class="text-center">
                                     <a href="#"
@@ -564,7 +645,8 @@
                                 <div class="btn_on_img" style="position: relative;">
                                     <img src="images/c_img3.webp"
                                         style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image3">
-                                    <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+                                    <button class="btn btn_1" data-bs-toggle="modal" data-bs-target="#carouselModal">Buy
+                                        Now</button>
                                 </div>
                                 <div class="text-center">
                                     <a href="#"
@@ -588,7 +670,8 @@
                                 <div class="btn_on_img" style="position: relative;">
                                     <img src="images/c_img4.webp"
                                         style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image4">
-                                    <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+                                    <button class="btn btn_1" data-bs-toggle="modal" data-bs-target="#carouselModal">Buy
+                                        Now</button>
                                 </div>
                                 <div class="text-center">
                                     <a href="#"
@@ -612,7 +695,8 @@
                                 <div class="btn_on_img" style="position: relative;">
                                     <img src="images/c_img5.webp"
                                         style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image5">
-                                    <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+                                    <button class="btn btn_1" data-bs-toggle="modal" data-bs-target="#carouselModal">Buy
+                                        Now</button>
                                 </div>
                                 <div class="text-center">
                                     <a href="#"
@@ -634,7 +718,8 @@
                                 <div class="btn_on_img" style="position: relative;">
                                     <img src="images/c_img6.webp"
                                         style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image5">
-                                    <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+                                    <button class="btn btn_1" data-bs-toggle="modal" data-bs-target="#carouselModal">Buy
+                                        Now</button>
                                 </div>
                                 <div class="text-center">
                                     <a href="#"
@@ -652,9 +737,9 @@
                             </div>
                         </div>
                         <!-- next control -->
-                        <button type="button" class="carousel-control-next justify-content-end"
-                            data-bs-target="#carouselDemo" data-bs-slide="next">
-                            <div class="bg-white py-4 shadow-lg">
+                        <button type="button" class="carousel-control-next"
+                            data-bs-target="#carouselDemo" data-bs-slide="next" style="width: 30px;">
+                            <div class="bg-primary py-4 shadow-lg">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </div>
@@ -663,15 +748,16 @@
                     </div>
 
                     <!-- Item2 -->
-                    <div class="carousel-item">
+                    <div class="carousel-item" style="height: 25%; width: 100%;">
 
-                        <div class="row g-3 mt-4">
+                        <div class="row g-3 mt-4" style="height: 25%; width: 100%;">
                             <!-- img1 -->
                             <div class="col d-flex flex-column">
                                 <div class="btn_on_img" style="position: relative;">
                                     <img src="images/c_img7.webp"
                                         style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image1">
-                                    <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+                                    <button class="btn btn_1" data-bs-toggle="modal" data-bs-target="#carouselModal">Buy
+                                        Now</button>
                                 </div>
                                 <div class="text-center">
                                     <a href="#"
@@ -693,7 +779,8 @@
                                 <div class="btn_on_img" style="position: relative;">
                                     <img src="images/c_img8.webp"
                                         style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image2">
-                                    <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+                                    <button class="btn btn_1" data-bs-toggle="modal" data-bs-target="#carouselModal">Buy
+                                        Now</button>
                                 </div>
                                 <div class="text-center">
                                     <a href="#"
@@ -716,7 +803,8 @@
                                 <div class="btn_on_img" style="position: relative;">
                                     <img src="images/c_img3.webp"
                                         style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image3">
-                                    <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+                                    <button class="btn btn_1" data-bs-toggle="modal" data-bs-target="#carouselModal">Buy
+                                        Now</button>
                                 </div>
                                 <div class="text-center">
                                     <a href="#"
@@ -740,7 +828,8 @@
                                 <div class="btn_on_img" style="position: relative;">
                                     <img src="images/c_img4.webp"
                                         style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image4">
-                                    <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+                                    <button class="btn btn_1" data-bs-toggle="modal" data-bs-target="#carouselModal">Buy
+                                        Now</button>
                                 </div>
                                 <div class="text-center">
                                     <a href="#"
@@ -764,7 +853,8 @@
                                 <div class="btn_on_img" style="position: relative;">
                                     <img src="images/c_img5.webp"
                                         style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image5">
-                                    <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+                                    <button class="btn btn_1" data-bs-toggle="modal" data-bs-target="#carouselModal">Buy
+                                        Now</button>
                                 </div>
                                 <div class="text-center">
                                     <a href="#"
@@ -786,7 +876,8 @@
                                 <div class="btn_on_img" style="position: relative;">
                                     <img src="images/c_img6.webp"
                                         style="width: 10em; height: 10em; margin-bottom: 1.5em;" alt="image5">
-                                    <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+                                    <button class="btn btn_1" data-bs-toggle="modal" data-bs-target="#carouselModal">Buy
+                                        Now</button>
                                 </div>
                                 <div class="text-center">
                                     <a href="#"
@@ -805,8 +896,8 @@
                         </div>
                         <!-- prev controls -->
                         <button type="button" class="carousel-control-prev justify-content-start"
-                            data-bs-target="#carouselDemo" data-bs-slide="prev">
-                            <div class="bg-white py-4 shadow-lg">
+                            data-bs-target="#carouselDemo" data-bs-slide="prev" style="width: 30px;">
+                            <div class="bg-primary py-4 shadow-lg">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Prev</span>
                             </div>
@@ -817,7 +908,7 @@
         </div>
 
         <!-- Poster -->
-        <div class="float-end mt-3 shadow" style="height: 23.5em">
+        <div class="mt-3 shadow img-poster" style="height: 23.5em">
             <img src="images/poster.png" style="height: 100%;" alt="furniture-poster">
         </div>
     </div>
@@ -826,7 +917,7 @@
 
     <!-- items div 2 -->
     <div>
-        <div class="container-fluid shadow" style="height: 25%; width: 87%; margin-left: 120px; margin-right: 105px;">
+        <div class="container-fluid container-2 shadow" style="height: 25%; width: 87%; margin-left: 7%; margin-right: 7%;">
 
             <div class="py-2 ps-3" style="height: 3em;">
                 <div class="d-inline h5">
@@ -848,7 +939,10 @@
                             <div class="modal-content">
                                 <!-- header -->
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">All Product</h5>
+                                    <h5 class="modal-title fw-bold" id="exampleModalLabel" style="padding-left: 170px;">
+                                        All Product</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
                                     <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
                                 </div>
                                 <!-- body -->
@@ -995,7 +1089,7 @@
 
             <hr>
 
-            <div class="row mt-4">
+            <div class="row mt-4 container-2-row" style="height: 25%; width: 100%;">
                 <!-- img1 -->
                 <div class="col-auto d-flex flex-column">
                     <div class="card" style="width: 18rem; border: none;">
@@ -1004,7 +1098,8 @@
                         <div class="btn_on_img d-flex justify-content-center" style="position: relative;">
                             <img class="mx-auto" src="images/c_img9.webp" style="max-width: 100%; max-height: 100%;"
                                 alt="image1">
-                            <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+                            <button class="btn btn_1" data-bs-toggle="modal" data-bs-target="#carouselModal">Buy
+                                Now</button>
                             <!-- </div> -->
                         </div>
 
@@ -1035,7 +1130,8 @@
                             style="position: relative; height: 200px; width: 286px;">
                             <img class="mx-auto" src="images/c_img10.webp" style="max-width: 100%; max-height: 100%;"
                                 alt="image2">
-                            <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+                            <button class="btn btn_1" data-bs-toggle="modal" data-bs-target="#carouselModal">Buy
+                                Now</button>
                         </div>
                         <div class="card-body">
                             <div class="text-center">
@@ -1063,7 +1159,8 @@
                             style="position: relative; height: 200px; width: 286px;">
                             <img class="mx-auto" src="images/c_img11.webp" style="max-width: 100%; max-height: 100%;"
                                 alt="image3">
-                            <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+                            <button class="btn btn_1" data-bs-toggle="modal" data-bs-target="#carouselModal">Buy
+                                Now</button>
                         </div>
 
                         <div class="card-body">
@@ -1093,7 +1190,8 @@
                             style="position: relative; height: 200px; width: 286px;">
                             <img class="mx-auto" src="images/c_img12.webp" style="max-width: 100%; max-height: 100%;"
                                 alt="image4">
-                            <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+                            <button class="btn btn_1" data-bs-toggle="modal" data-bs-target="#carouselModal">Buy
+                                Now</button>
                         </div>
 
                         <div class="card-body">
@@ -1123,7 +1221,8 @@
                             style="position: relative; height: 200px; width: 286px;">
                             <img class="mx-auto" src="images/c_img13.webp" style="max-width: 100%; max-height: 100%;"
                                 alt="image5">
-                            <a href="product.html" class="btn btn_1" role="button">Buy Now</a>
+                            <button class="btn btn_1" data-bs-toggle="modal" data-bs-target="#carouselModal">Buy
+                                Now</button>
                         </div>
 
                         <div class="card-body">
@@ -1150,18 +1249,21 @@
     </div>
     <!-- items div 2 ended -->
 
-
-    <div class="container-fluid bg-secondary position-relative bottom-0 mt-3">
-        <div class="row justify-content-center p-1">
-            <div class="col-1"><button type="button" class="btn shadow-none"><a href="#">Homepage</a></button></div>
-            <div class="col-1"><button type="button" class="btn shadow-none"><a href="privacy_policy.html">Privacy
-                        Policy</a></button></div>
-            <div class="col-1"><button type="button" class="btn shadow-none"><a href="contact.html">Contact
-                        us</a></button></div>
+    <div class="container-fluid mt-3" style="background-color: #2874f0;">
+        <div class="row justify-content-evenly pt-3 p-1">
+            <div class="col-1 text-center">
+                <button type="button" class="btn bg-white shadow-none">Homepage</button>
+            </div>
+            <div class="col-1 text-center">
+                <button type="button" class="btn bg-white shadow-none">Privacy&nbsp;Policy</button>
+            </div>
+            <div class="col-1">
+                <button type="button" class="btn bg-white shadow-none">Contact&nbsp;us</button>
+            </div>
         </div>
         <hr>
-        <div class="row justify-content-center p-1">
-            <div class="col-2 fw-bold"><i class="fa fa-copyright"></i>2023 Copyright: By Jay Koshti</div>
+        <div class="text-center" style="color: #fff;">
+            <i class="fa fa-copyright"></i>&nbsp;2023&nbsp;Copyright:&nbsp;By&nbsp;Jay&nbsp;Koshti
         </div>
     </div>
 
